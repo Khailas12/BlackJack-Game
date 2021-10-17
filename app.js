@@ -13,6 +13,11 @@ let message = '';
 
 
 function startGame() {
+    renderGame()
+}
+
+
+function renderGame() {
 
     cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
     sumEl.textContent = "Sum: " + sum;
@@ -33,5 +38,5 @@ function startGame() {
 function newCard() {
     let card = 7;
     sum += card;
-    startGame()
+    renderGame()
 }
