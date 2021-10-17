@@ -12,7 +12,7 @@ h1 {
     color: goldenrod;
 }
 
-message-el {
+#message-el {
     font-size: italic;
 }
 
@@ -24,5 +24,7 @@ button {
     padding-bottom: 5px;
     font-weight: bold;
     border: none;
-    border-radius: 2px;    
+    border-radius: 2px;   
+    margin-bottom: 2px; 
+    margin-top: 2px;
 }
