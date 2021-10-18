@@ -15,8 +15,9 @@ let playerEL = document.getElementById('player-el');
 // objects are called complex or composite datatypes
 let player = {
     playerName: 'bruce',
-    money: 145
+    money: 145,
 }
+
 
 playerEl.textContent = player.playerName + ": $" + player.money;
 
@@ -26,7 +27,7 @@ function getRandomCard() {
     
     if (randomNumber > 10) {
         return 10;    // queen or king
-    } else if(randomNumber === 1) {
+    } else if(randomNumber === 1)  {
         return 11;    // ace
     } else {
         return randomNumber;    
