@@ -8,6 +8,17 @@ let sum = 0;
 let messageEl = document.getElementById('message-el');
 let sumEl = document.getElementById('sum-el');
 let cardsEl = document.getElementById('cards-el');
+let playerEL = document.getElementById('player-el');
+
+
+// using objects
+// objects are called complex or composite datatypes
+let player = {
+    playerName: 'bruce',
+    money: 145
+}
+
+playerEl.textContent = player.playerName + ": $" + player.money;
 
 
 function getRandomCard() {
@@ -58,8 +69,10 @@ function renderGame() {
 
 
 function newCard() {
-    let card = getRandomCard();
-    sum += card;
-    cards.push(card);
-    renderGame()
+    if (isAlive===true && hasBlackJack===false) {
+        let card = getRandomCard();
+        sum += card;
+        cards.push(card);
+        renderGame()
+    }   // if the blackjack is true then end of the game
 }
